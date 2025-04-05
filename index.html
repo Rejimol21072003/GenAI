@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI CyberDefense Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 AI CyberDefense Simulator</h1>
+
+    <!-- Section 1: Phishing Email Detection -->
+    <section>
+      <h2>📨 Phishing Email Detection</h2>
+      <textarea id="emailInput" placeholder="Paste suspicious email here..."></textarea>
+      <button onclick="detectPhishing()">Analyze Email</button>
+      <p id="emailResult"></p>
+    </section>
+
+    <!-- Section 2: Behavior Anomaly Detection -->
+    <section>
+      <h2>📊 User Behavior Monitoring</h2>
+      <button onclick="simulateUserBehavior()">Simulate User Activity</button>
+      <p id="behaviorResult"></p>
+    </section>
+
+    <!-- Section 3: Automated System Response -->
+    <section>
+      <h2>🔐 Automated System Response</h2>
+      <p id="responseAction">System status: <span id="systemStatus">Normal</span></p>
+    </section>
+
+    <!-- Section 4: Threat Intelligence Sharing -->
+    <section>
+      <h2>🌐 Threat Intelligence Sharing</h2>
+      <button onclick="shareThreat()">Share Latest Threat</button>
+      <p id="sharedThreat"></p>
+    </section>
+
+    <!-- Section 5: Incident Log -->
+    <section>
+      <h2>🗃️ Incident Log</h2>
+      <button onclick="showIncidentLog()">View Log</button>
+      <div id="incidentLog"></div>
+    </section>
+
+    <!-- Section 6: Live Threat Feed -->
+    <section>
+      <h2>📰 Live Threat Feed</h2>
+      <div class="threat-feed" id="threatFeed">Loading threats...</div>
+    </section>
+
+    <!-- Section 7: Global Login Monitor -->
+    <section>
+      <h2>🌍 Global Login Monitor</h2>
+      <button onclick="simulateLoginActivity()">Simulate Logins</button>
+      <div id="loginMap"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
